@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>RateMyTA</title>
+</head>
+<body>
+<div class="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
+    <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
+        <h1 class="font-bold text-center text-3xl mb-5"><span class="text-blue-500">Rate</span>MyTA</h1>
+        <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
+            <div class="px-5 py-7">
+				<script src="https://accounts.google.com/gsi/client" async defer></script>
+				<div id="g_id_onload"
+					data-client_id="YOUR_GOOGLE_CLIENT_ID"
+					data-login_uri="https://your.domain/your_login_endpoint"
+					data-auto_prompt="false">
+				</div>
+				<div class="g_id_signin"
+					data-type="standard"
+					data-size="large"
+					data-theme="outline"
+					data-text="sign_in_with"
+					data-shape="rectangular"
+					data-logo_alignment="left"
+					onClick="event.preventDefault(); alert('This website is a simulation of a landing page. Please do not try to submit any actual info.')">
+				</div>
+			
+				<button onClick="alert('This website is a simulation of a landing page. Please do not try to submit any actual info.')" type="button" class="my-2 transition duration-200 bg-black hover:bg-white hover:text-black focus:bg-white focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20.32" height="25" viewBox="0 0 256 315" fill="white" class="w-4 h-4 mr-4 inline-block">
+						<path d="M213.803 167.03c.442 47.58 41.74 63.413 42.197 63.615c-.35 1.116-6.599 22.563-21.757 44.716c-13.104 19.153-26.705 38.235-48.13 38.63c-21.05.388-27.82-12.483-51.888-12.483c-24.061 0-31.582 12.088-51.51 12.871c-20.68.783-36.428-20.71-49.64-39.793c-27-39.033-47.633-110.3-19.928-158.406c13.763-23.89 38.36-39.017 65.056-39.405c20.307-.387 39.475 13.662 51.889 13.662c12.406 0 35.699-16.895 60.186-14.414c10.25.427 39.026 4.14 57.503 31.186c-1.49.923-34.335 20.044-33.978 59.822M174.24 50.199c10.98-13.29 18.369-31.79 16.353-50.199c-15.826.636-34.962 10.546-46.314 23.828c-10.173 11.763-19.082 30.589-16.678 48.633c17.64 1.365 35.66-8.964 46.64-22.262"/>
+					</svg>
+					<span class="inline-block mr-2">Log In With Apple</span>
+				</button> 
+            </div>
+            <div class="p-5">
+                <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
+                <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+                <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
+                <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+                <button type="button" class="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
+					<span class="inline-block mr-2">Login</span>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+					</svg>
+				</button>
+            </div>
+            <div class="py-5">
+                <div class="grid grid-cols-2 gap-1">
+                    <div class="text-center sm:text-left whitespace-nowrap">
+                        <button class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block align-text-top">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                </svg>
+                <span class="inline-block ml-1">Forgot Password</span>
+            </button>
+                    </div>
+                    <div class="text-center sm:text-right whitespace-nowrap">
+                        <button class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block align-text-bottom	">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <span class="inline-block ml-1">Help</span>
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
